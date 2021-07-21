@@ -7,10 +7,10 @@ function App({ model }) {
 }
 
 class ReactView extends View {
-  constructor(elemId, model) {
-    super(elemId, model);
+  constructor(selector, model) {
+    super(selector, model);
 
-    this._rootEl = document.getElementById(this._elemId);
+    this._rootEl = document.querySelector(this._selector);
   }
 
   init() {

@@ -1,6 +1,6 @@
 class View {
-  constructor(elemId, model) {
-    this._elemId = elemId;
+  constructor(selector, model) {
+    this._selector = selector;
     this._model = model;
   }
 

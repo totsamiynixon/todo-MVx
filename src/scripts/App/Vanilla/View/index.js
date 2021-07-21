@@ -1,10 +1,10 @@
 import View from "../../Core/View";
 
 class VanillaView extends View {
-  constructor(elemId, model) {
-    super(elemId, model);
+  constructor(selector, model) {
+    super(selector, model);
 
-    this._rootEl = document.getElementById(this._elemId);
+    this._rootEl = document.querySelector(this._selector);
   }
 
   init() {
@@ -23,7 +23,7 @@ class VanillaView extends View {
     //TODO: reate new render event bindings
 
     this._rootEl.innerHTML = "";
-    
+
     const h1El = document.createElement("h1");
     h1El.innerHTML = "Vanilla: " + this._model.getAll().length;
 
