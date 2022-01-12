@@ -3,9 +3,9 @@ import EventEmitter from "eventemitter3";
 const Mixin = (Mixin) => class extends Mixin {};
 
 class Model extends Mixin(EventEmitter) {
-  constructor() {
+  constructor(initialList) {
     super();
-    this._todoList = [];
+    this._todoList = initialList ? [...initialList] : [];
   }
 
   getAll() {

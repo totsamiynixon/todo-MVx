@@ -1,8 +1,4 @@
 class Storage {
-  constructor() {
-
-  }
-  
   getAll() {
     throw new Error("not implemented");
   }

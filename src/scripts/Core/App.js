@@ -1,4 +1,4 @@
-class Application {
+class App {
   constructor(model, view, database) {
     this._model = model;
     this._view = view;
@@ -27,4 +27,4 @@ class Application {
   }
 }
 
-export default Application;
+export default App;
